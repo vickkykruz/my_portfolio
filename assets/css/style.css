@@ -10,6 +10,10 @@
     font-family: Poppins, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 img {
     max-width: 100%;
     max-height: 100%;
@@ -42,6 +46,7 @@ header::after{
 
 header nav.navbar {
     z-index: 9999;
+    background-color: rgba(0, 0, 0, .8);
 }
 header nav.navbar .navbar-brand {
     color: #fff;
@@ -53,11 +58,11 @@ header nav.navbar .navbar-brand span {
 }
 
 header nav.navbar .navbar-nav .nav-item {
-    margin-right: .5rem;
+    margin-right: .2rem;
 }
 
 header nav.navbar .navbar-nav .nav-item .nav-link {
-    padding: 5rem;
+    padding: 0  .5rem;
     color: #fff;
     transition: .3s;
 }
@@ -493,6 +498,61 @@ header .header-content .content p{
     font-weight: 400;
 }
 
+footer {
+    background-color: #222;
+}
+
+footer .footer .footer-soical ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer .footer-soical ul li {
+    margin-right: .5rem;
+    display: inline-block;
+}
+
+footer .footer .footer-soical ul li a {
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    /* padding: 20px; */
+    position: relative;
+    border-radius: 5px;
+    display: block;
+    font-size: 1.2rem;
+    transition: .3s;
+}
+
+footer .footer .footer-soical ul li a:hover {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+footer .footer .footer-soical ul li a i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer .footer .divider {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+footer .footer .footer-bottom {
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+}
+
 @media (max-width:992px){
     .navbar-collapse {
         background: rgba(0, 0, 0, .5);
@@ -518,8 +578,15 @@ header .header-content .content p{
     }
 
     .services .content .single-service p,
-    .life-history .life-single p {
+    .life-history .life-single p,
+    footer .footer .footer-soical ul li a,
+    footer .footer .footer-bottom  {
         font-size: .9rem;
+    }
+
+    footer .footer .footer-soical ul li a {
+        width: 30px;
+        height: 30px;
     }
 }
 
