@@ -254,6 +254,27 @@ header .header-content .content p{
     top: 0;
 }
 
+.about .about-button {
+    display: block;
+    transform: translateY(30px);
+}
+
+
+.about .about-button a {
+    text-decoration: none;
+    color: #111;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: .7rem .7rem;
+    margin-right: 1.3rem;
+    margin-top: 20px;
+    transition: .3s;
+}
+
+.about .about-button a:hover {
+    color: var(--primary-color);
+}
+
 .services {
     background-image: url(../images/pexels-burak-the-weekender-205505.jpg);
     width: 100%;
@@ -498,6 +519,117 @@ header .header-content .content p{
     font-weight: 400;
 }
 
+.contact {
+    margin-top: 30px;
+    background-image: url(../images/contast_wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.contact::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.contact .container {
+    position: relative;
+    z-index: 10;
+    color: #fff;
+}
+
+.contact .container h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact .container label {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.contact .container .form-group {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    margin: 5px;
+}
+
+.contact .container .text-area {
+    height: 130px;
+}
+
+.contact .container .form-group textarea {
+    resize: none;
+}
+
+.contact .container .form-group input,
+.contact .container .form-group textarea {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px;
+}
+
+.contact .container .form-group input:focus,
+.contact .container .form-group textarea:focus,
+.contact .container .form-group input:valid,
+.contact .container .form-group textarea:valid {
+    border: 1px solid var(--primary-color);
+    transition: .3s;
+}
+
+.contact .container .content {
+    width: 100%;
+}
+
+.contact .container .content ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.contact .container .content ul li {
+    background-color:  rgba(255, 255, 255, .8);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.contact .container .content ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.contact .container .content ul li a:hover {
+    color: rgb(109, 129, 38);
+}
+
+.contact .container .content ul li a i {
+    font-size: 1.3rem;
+    margin-right: .5rem;
+}
+
 footer {
     background-color: #222;
 }
@@ -595,11 +727,19 @@ footer .footer .footer-bottom {
     .testimonials .testimonial-single {
         margin-bottom: 10px;
     }
+
+    .about .about-button {
+        transform: translateY(20px);
+    }
 }
 
 @media (max-width:500px){
     header .header-content .content h2 {
         font-size: 1.2rem;
+    }
+
+    .contact .container h2 {
+        font-size: 1.5rem;
     }
     header .header-content .content p {
         font-size: .9rem;
@@ -614,8 +754,23 @@ footer .footer .footer-bottom {
         font-size: 1.2rem;
     }
 
-    .services .content .single-service p,
-    .life-history .life-single p {
+    .about .about-button a {
         font-size: .9rem;
+        /* padding: 5rem 3rem; */
+    }
+
+    .services .content .single-service p,
+    .life-history .life-single p,
+    .contact .container .content ul li a {
+        font-size: .9rem;
+    }
+
+    .contact .container .content ul {
+        margin-top: 10px;
+    }
+
+    .contact .container .content ul li a i { 
+        font-size: 1rem;
+        margin-right: .2rem;
     }
 }
