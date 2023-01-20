@@ -25,3 +25,93 @@ img {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
+@media (max-width:992px){
+  .navbar-collapse {
+      background: rgba(0, 0, 0, .5);
+      padding: 10px 0;
+  }
+
+  .about .col-md-4 {
+      margin-bottom: 20px;
+  }
+
+  .about .content h2 {
+      font-size: 1.8rem;
+  }
+
+  .about .skills .single-skill p img {
+      width: 20px;
+      height: 20px;
+  }
+
+  .services .content .single-service h4,
+  .life-history .life-single h4 {
+      font-size: 1.2rem;
+  }
+
+  .services .content .single-service p,
+  .life-history .life-single p,
+  footer .footer .footer-soical ul li a,
+  footer .footer .footer-bottom  {
+      font-size: .9rem;
+  }
+
+  footer .footer .footer-soical ul li a {
+      width: 30px;
+      height: 30px;
+  }
+}
+
+@media (max-width:766px) {
+  .services .content .single-service,
+  .testimonials .testimonial-single {
+      margin-bottom: 10px;
+  }
+
+  .about .about-button {
+      transform: translateY(20px);
+  }
+}
+
+@media (max-width:500px){
+  header .header-content .content h2 {
+      font-size: 1.2rem;
+  }
+
+  .contact .container h2 {
+      font-size: 1.5rem;
+  }
+  header .header-content .content p {
+      font-size: .9rem;
+  }
+
+  .about .content h2 {
+      font-size: 1.6rem;
+  }
+
+  .services .content .single-service h4,
+  .life-history .life-single h4 {
+      font-size: 1.2rem;
+  }
+
+  .about .about-button a {
+      font-size: .9rem;
+      /* padding: 5rem 3rem; */
+  }
+
+  .services .content .single-service p,
+  .life-history .life-single p,
+  .contact .container .content ul li a {
+      font-size: .9rem;
+  }
+
+  .contact .container .content ul {
+      margin-top: 10px;
+  }
+
+  .contact .container .content ul li a i {
+      font-size: 1rem;
+      margin-right: .2rem;
+  }
+}
