@@ -1,0 +1,110 @@
+.contact {
+  margin-top: 30px;
+  background-image: url(../../assets/images/contast_wallpaper.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, .6);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.contact .container {
+  position: relative;
+  z-index: 10;
+  color: #fff;
+}
+
+.contact .container h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact .container label {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.contact .container .form-group {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  margin: 5px;
+}
+
+.contact .container .text-area {
+  height: 130px;
+}
+
+.contact .container .form-group textarea {
+  resize: none;
+}
+
+.contact .container .form-group input,
+.contact .container .form-group textarea {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px;
+}
+
+.contact .container .form-group input:focus,
+.contact .container .form-group textarea:focus,
+.contact .container .form-group input:valid,
+.contact .container .form-group textarea:valid {
+  border: 1px solid var(--primary-color);
+  transition: .3s;
+}
+
+.contact .container .content {
+  width: 100%;
+}
+
+.contact .container .content ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.contact .container .content ul li {
+  background-color:  rgba(255, 255, 255, .8);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.contact .container .content ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+  transition: .3s;
+}
+
+.contact .container .content ul li a:hover {
+  color: rgb(109, 129, 38);
+}
+
+.contact .container .content ul li a i {
+  font-size: 1.3rem;
+  margin-right: .5rem;
+}

@@ -16,6 +16,15 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { FooterComponent } from './footer/footer.component';
 import { ServiceComponent } from './service/service.component';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { LightboxModule } from 'ngx-lightbox';
+import { OwlModule } from 'ngx-owl-carousel';
+import { HomeComponent } from './home/home.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { ContactComponent } from './contact/contact.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,7 +32,12 @@ import {MatGridListModule} from '@angular/material/grid-list';
     AppNavComponent,
     AboutMeComponent,
     FooterComponent,
-    ServiceComponent
+    ServiceComponent,
+    NotfoundComponent,
+    HomeComponent,
+    ProjectsComponent,
+    TestimonialsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +50,11 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    MatGridListModule
+    MatGridListModule,
+    FontAwesomeModule,
+    LightboxModule,
+    OwlModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

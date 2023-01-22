@@ -1,57 +1,37 @@
 <header>
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"
-        >V<span><i>Pro</i></span></a
-      >
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse ali" id="navbarSupportedContent">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              About
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" routerLink="/about-me">About Me</a></li>
-              <li><a class="dropdown-item" href="#">Projects</a></li>
-              <li><a class="dropdown-item" href="#">Experiences</a></li>
-              <li><a class="dropdown-item" href="#">Testimonials</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Service</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Blogs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Course</a>
-          </li>
-        </ul>
+  <nav class="navbar fixed-top shadow-sm navbar-expand-lg py-3 py-lg-0 px-lg-5">
+    <a href="index.html" class="navbar-brand ml-lg-3">
+      <h1 class="m-0 display-5">
+        Personal <span><i>Profoilo</i></span>
+      </h1>
+    </a>
+    <button
+      type="button"
+      class="navbar-toggler"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse px-lg-3" id="navbarSupportedContent">
+      <div class="navbar-nav m-auto py-0">
+        <a routerLink="home" class="nav-item nav-link active">Home</a>
+        <a routerLink="about-me" class="nav-item nav-link">About Me</a>
+        <a href="#qualification" class="nav-item nav-link">Projects</a>
+        <a href="#skill" class="nav-item nav-link">Experiences</a>
+        <a href="#service" class="nav-item nav-link">Service</a>
+        <a href="#portfolio" class="nav-item nav-link">Testimonials</a>
+        <a href="#testimonial" class="nav-item nav-link">Blogs</a>
+        <a href="#blog" class="nav-item nav-link">Courses</a>
+        <a href="#contact" class="nav-item nav-link">Contact</a>
       </div>
+      <a href="" class="btn btn-outline-warning d-none d-lg-block">Hire Me</a>
     </div>
   </nav>
+
   <div class="container header-content w-md-50 w-100">
     <img src="../assets/images/my_picture.jpeg" alt="Victor Chukwuemeka" />
     <div class="content mt-2">
@@ -69,7 +49,7 @@
     </div>
   </div>
 </header>
-<div class=" mt-5 mb-5">
+<div class="mt-5 mb-5">
   <router-outlet></router-outlet>
 </div>
 <app-footer></app-footer>
