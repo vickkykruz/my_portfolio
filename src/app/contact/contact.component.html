@@ -1,38 +1,113 @@
-<div class="section contact">
+<!-- {{ userInfo | json }} -->
+<!-- {{ myForm.value | json }} -->
+<!-- {{ form.invalid | json }} -->
+<!-- {{ myForm.valid | json }} -->
+<div class="section contact" id="contactUs">
   <div class="container">
     <h2>Contact Me</h2>
-    <div class="row">
-      <div class="col-lg-6 col-sm-12">
-        <form action="">
-          <div class="form-group">
-            <input type="text" name="" id="name" placeholder="Enter Your Name" required>
-          </div>
+    <form>
+      <div class="row">
+        <div class="col-lg-6 col-sm-12">
+          <form #form="ngForm">
+            <div class="form-group">
+              <input
+                type="text"
+                name="name"
+                id=""
+                [(ngModel)]="userInfo.name"
+                placeholder="Enter Your Name"
+                #clientName="ngModel"
+                required
+              />
+              <div class="text-danger" *ngIf="clientName.dirty && clientName.errors?.['required']">
+                <h5 class="displayError">Please Enter Your Name</h5>
+              </div>
+            </div>
 
-          <div class="form-group mt-4">
-            <input type="text" name="" id="subject" placeholder="Enter Your Subject" required>
-          </div>
+            <div class="form-group mt-4">
+              <input
+                type="text"
+                name="subject"
+                id=""
+                [(ngModel)]="userInfo.subject"
+                #clientSubject="ngModel"
+                placeholder="Enter Your Subject"
+                required
+              />
+              <div class="text-danger" *ngIf="clientSubject.dirty && clientSubject.errors?.['required']">
+                <h5 class="displayError">Please Enter The Information Subject</h5>
+              </div>
+            </div>
 
-          <div class="form-group mt-4">
-            <input type="email" name="" id="email" placeholder="Enter Your Email" required>
-          </div>
+            <div class="form-group mt-4">
+              <input
+                type="email"
+                name="email"
+                [(ngModel)]="userInfo.email"
+                id=""
+                email="true"
+                #clientEmail="ngModel"
+                placeholder="Enter Your Email"
+                required
+              />
+              <!-- {{ clientEmail.errors | json}} -->
+              <div class="text-danger" *ngIf="clientEmail.errors?.['email']">
+                <h5 class="displayError">Please Enter a Valid Email Address</h5>
+              </div>
+              <div class="text-danger" *ngIf="clientEmail.dirty && clientEmail.errors?.['required']">
+                <h5 class="displayError">Please Enter Your Email Address</h5>
+              </div>
+            </div>
 
-          <div class="form-group text-area mt-4">
-            <textarea rows="5"  name="" id="message" placeholder="Enter Message"></textarea>
+            <div class="form-group text-area mt-4">
+              <textarea
+                rows="3"
+                name="message"
+                id=""
+                [(ngModel)]="userInfo.message"
+                placeholder="Enter Message"
+                #clientMessage="ngModel"
+                required
+              ></textarea>
+              <div class="text-danger" *ngIf="clientMessage.dirty && clientMessage.errors?.['required']">
+                <h5 class="displayError">Please Enter Your Message</h5>
+              </div>
+            </div>
+            <div class="mt-3 mb-3">
+              <button type="submit" [disabled]="form.invalid" class="btn btn-outline-warning btn-block">Submit</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <div class="content">
+            <ul>
+              <li>
+                <a href="#http://" target="_blank" rel="noopener noreferrer"
+                  ><i class="icofont icofont-location-pin"></i> P.O Box 201,
+                  Adeyemo Alakija St, Ikeja, Lagos State, Nigeria.</a
+                >
+              </li>
+              <li>
+                <a href="mailto:onwuegbuchulemvic02@gmail.com"
+                  ><i class="icofont icofont-ui-email"></i>
+                  Onwuegbuchulemvic02@gmail.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+2349055302687"
+                  ><i class="icofont icofont-ui-touch-phone"></i>
+                  +234-905-530-2687</a
+                >
+              </li>
+              <li>
+                <a href="#" download
+                  ><i class="icofont icofont-info-circle"></i> Download Resume</a
+                >
+              </li>
+            </ul>
           </div>
-
-        </form>
-      </div>
-      <div class="col-lg-6 col-sm-12">
-        <div class="content">
-          <ul>
-            <li><a href="#http://" target="_blank" rel="noopener noreferrer"><i class="icofont icofont-location-pin"></i> P.O Box 201, Adeyemo Alakija St, Ikeja, Lagos State, Nigeria.</a></li>
-            <li><a href="mailto:onwuegbuchulemvic02@gmail.com"><i class="icofont icofont-ui-email"></i> Onwuegbuchulemvic02@gmail.com</a></li>
-            <li><a href="tel:+2349055302687"><i class="icofont icofont-ui-touch-phone"></i> +234-905-530-2687</a></li>
-            <li><a href="#" download><i class="icofont icofont-info-circle"></i> Download Resume</a></li>
-          </ul>
         </div>
       </div>
-    </div>
-
+    </form>
   </div>
 </div>

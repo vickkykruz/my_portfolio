@@ -25,6 +25,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule } from '@angular/forms';
+import { ContactModule } from './contact/contact.module';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,6 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     ProjectsComponent,
     TestimonialsComponent,
-    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +54,8 @@ import { FormsModule } from '@angular/forms';
     FontAwesomeModule,
     LightboxModule,
     OwlModule,
-    FormsModule
+    FormsModule,
+    ContactModule
   ],
   providers: [],
   bootstrap: [AppComponent]

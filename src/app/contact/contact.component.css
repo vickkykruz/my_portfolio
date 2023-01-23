@@ -45,7 +45,7 @@
 }
 
 .contact .container .text-area {
-  height: 130px;
+  height: 100px;
 }
 
 .contact .container .form-group textarea {
@@ -107,4 +107,14 @@
 .contact .container .content ul li a i {
   font-size: 1.3rem;
   margin-right: .5rem;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.displayError {
+  padding-left: 10px;
+  font-size: .9rem;
+  font-weight: 600;
 }
