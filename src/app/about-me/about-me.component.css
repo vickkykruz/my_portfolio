@@ -126,3 +126,16 @@
 .about .about-button a:hover {
   color: var(--primary-color);
 }
+
+/* Mobile Size */
+@media screen and (max-width: 425px) {
+  .content p {
+    font-size: .9rem;
+    line-height: normal;
+  }
+
+  .about .skills .single-skill p img {
+    width: 20px;
+    height: 20px;
+  }
+}

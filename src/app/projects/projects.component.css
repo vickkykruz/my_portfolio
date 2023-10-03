@@ -64,3 +64,14 @@
   font-size: 1.3rem;
   font-weight: 600;
 }
+
+/* Mobile Size */
+@media screen and (max-width: 425px) {
+  .projects h2 {
+    font-size: 1.8rem;
+  }
+  
+  .projects p {
+    font-size: .8rem;
+  }
+}

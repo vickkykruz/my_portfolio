@@ -124,3 +124,14 @@ header .header-content .content p {
   font-size: 1rem;
   color: #fff;
 }
+
+/* Mobile Size */
+@media screen and (max-width: 425px) {
+  header .header-content .content h2 {
+    font-size: 1.4rem;
+  }
+
+  header .header-content .content p {
+    font-size: .9rem;
+  }
+}
