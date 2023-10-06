@@ -1,0 +1,141 @@
+.about {
+  width: 100%;
+}
+
+
+.about .content {
+  text-align: justify;
+}
+
+.about .content h2 {
+  font-weight: 700;
+  color: #111;
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.about .content p {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.about .skills {
+  width: 100%;
+}
+
+.about .skills h4 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
+  display: block;
+  margin: 20px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.about .skills h4 span {
+  background-color: #fff;
+  padding: 0 10px;
+  color: #111;
+  /* border-radius: 50%; */
+}
+
+.about .skills h4::before,
+.about .skills h4::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  background-image: linear-gradient(to right, rgb(131, 190, 20) 0%, rgb(219, 223, 16) 100%);
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  z-index: -1;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.about .skills .single-skill {
+  width: 48%;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 25px;
+}
+
+.about .skills .single-skill p {
+  margin-bottom: 7px;
+  display: block;
+}
+.about .skills .single-skill p img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.about .skills .single-skill p span {
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: 600;
+
+}
+
+.about .skills .single-skill .custom-progress {
+  /* width: 50%; */
+  background-color: #e9ecef;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  height: 5px;
+  position: relative;
+}
+
+.about .skills .single-skill .custom-progress .progress-bar {
+  /* width: 80%; */
+  background-image: linear-gradient(to right, rgb(131, 190, 20) 0%, rgb(219, 223, 16) 100%);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.about .about-button {
+  display: block;
+  transform: translateY(30px);
+}
+
+
+.about .about-button a {
+  text-decoration: none;
+  color: #111;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: .7rem .7rem;
+  margin-right: 1.3rem;
+  margin-top: 20px;
+  transition: .3s;
+}
+
+.about .about-button a:hover {
+  color: var(--primary-color);
+}
+
+/* Mobile Size */
+@media screen and (max-width: 425px) {
+  .content p {
+    font-size: .9rem;
+    line-height: normal;
+  }
+
+  .about .skills .single-skill p img {
+    width: 20px;
+    height: 20px;
+  }
+}
